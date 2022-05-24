@@ -1,0 +1,3 @@
+ctrl a
+ctrl k f 코드정렬
+ctrl k s 단축키보기
