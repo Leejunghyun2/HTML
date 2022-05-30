@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>input103.html</title>
+</head>
+<body>
+    <h3>회원정보</h3> <hr><hr>
+    <form action="">
+    <fieldset>
+        <legend>인적사항</legend>
+        이 름 : <input type="text" name="name" value="ID 입력요망"> 주민번호 : <input type="text" name="pn" size="6">- <input type="text" name="pn2" size="7"> <br>
+        국 적 : <select name="country" >
+                <option value="내국인">내국인(대한민국)</option>
+                <option value="외국인">외국인</option>
+        </select>
+        취득자격증 : <select name="자격" size="1"  multiple  >
+                <option value="정보처리산업기사1">정보처리산업기사1</option>
+                <option value="운전면허2">운전면허증2</option>
+                <option value="정보처리기능사3">정보처리기사3</option>
+                <option value="정보기기운용기능사4">정보기기운용기능사4</option>
+                <option value="정보보안기사5">정보보안기사5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>성별 & 학년</legend>
+        성별 : <input type="radio" name="gender" id="g1" value="male"><label for="g1">남성</label>
+        <input type="radio" name="gender" id="g2" value="female"><label for="g2">여성</label> <br>
+        학년 : <input type="radio" name="grade" id="r1" value="1"><label for="r1">1학년</label>
+        <input type="radio" name="grade" id="r2" value="2"><label for="r2">2학년</label>
+        <input type="radio" name="grade" id="r3" value="3"><label for="r3">3학년</label>
+        <input type="radio" name="grade" id="r4" value="4"><label for="r4">4학년</label>
+    </fieldset>
+    <fieldset>
+        <legend>취미</legend>
+        <input type="checkbox" name="re" id="a1"><label for="a1">독서</label>
+        <input type="checkbox" name="바둑" id="a2"><label for="a2">바둑</label>
+        <input type="checkbox" name="골프" id="a3"><label for="a3">골프</label>
+        <input type="checkbox" name="등산" id="a4"><label for="a4">등산</label>
+        <input type="checkbox" name="여행" id="a5"><label for="a5">여행</label>
+        <input type="checkbox" name="기타" id="a6"><label for="a6">기타</label> 
+    </fieldset> 
+    <fieldset>
+        <legend>메모사항</legend>
+        <textarea name="메모"  cols="60" rows="3" >
+            
+        메모글을 남겨주세요.
+        
+        </textarea>
+    </fieldset> <br>
+    첨부서류 : <input type="file" name="filename" /> <hr>
+    <button type="submit">보내기</button>  <!-- 2가지 가능 -->
+    <!--<input type="submit" name="보내기" value="보내기">-->
+    <input type="reset" name="reset" value="다시 입력하기">
+
+</form>
+
+
+
+</body>
+</html>
