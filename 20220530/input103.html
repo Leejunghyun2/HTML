@@ -8,7 +8,7 @@
     <form action="">
     <fieldset>
         <legend>인적사항</legend>
-        이 름 : <input type="text" name="name" value="ID 입력요망"> 주민번호 : <input type="text" name="pn" size="6">- <input type="text" name="pn2" size="7"> <br>
+        이 름 : <input type="text" name="name" placeholder="ID 입력요망"> 주민번호 : <input type="text" name="pn" size="6" maxlength="6"/>- <input type="password" name="pn2" size="7" maxlength="7"/> <br>
         국 적 : <select name="country" >
                 <option value="내국인">내국인(대한민국)</option>
                 <option value="외국인">외국인</option>
@@ -41,11 +41,7 @@
     </fieldset> 
     <fieldset>
         <legend>메모사항</legend>
-        <textarea name="메모"  cols="60" rows="3" >
-            
-        메모글을 남겨주세요.
-        
-        </textarea>
+        <textarea name="메모"  cols="60" rows="3" placeholder="메모를 남겨주세요." ></textarea>
     </fieldset> <br>
     첨부서류 : <input type="file" name="filename" /> <hr>
     <button type="submit">보내기</button>  <!-- 2가지 가능 -->
