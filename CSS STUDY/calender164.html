@@ -3,27 +3,29 @@
 <head>
     <title>calender164.html</title>
     <style>
-        h1{position: relative}
-        table{width: 80%;  border-collapse: collapse; border: hidden; table-layout: fixed; }
-        th{text-align: center;}
-        tr:first-child{height: 0;}
-        tr{height: 2cm;  vertical-align: top;  width: 30%;}
-        td{border: 1px solid black; padding-left: 10px;}
-        p{text-align: right; vertical-align: bottom; color: red; font-weight: 900;}
-        #sunday{color: red;}
-        caption{font-size: xx-large; font-weight: 900; }
+        .day{text-align: start; vertical-align: top;}
+        .middle{font-size: x-small; text-align: left; vertical-align: middle; color: blue; font-weight: bolder;}
+        .son{font-size: x-small; text-align: right; vertical-align: bottom; color: red; font-weight: bolder; }
+        .year{font-size: 46px;font-weight: bolder;}
+        .month{font-size: 32px; font-weight: bold;}
+        table{border-collapse: collapse; border: hidden; table-layout: fixed;}
+        th{border-bottom: 1px solid red; }
+        td{border-top: hidden; width: 120px; height: 80px;  border: 0.01rem solid black; text-align: left; vertical-align: top; font-weight: bolder;}
+        td::first-letter{ padding-left: 10px;}
+        th:nth-child(1),td:nth-child(1){color: red;}
+        th:nth-last-child(1){color: blue;}
     </style>
 </head>
 <body>
-    <h1>2022년</h1>
+    
     <table>
-        <caption>6월</caption>
+        <caption style="text-align: left; "><span class="year">&nbsp; 2022년</span>　　　　　　　　　　　　　<span class="month">6월</span></caption>
         <tr><th id="sunday">일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th id="saturday">토</th></tr>
-        <tr><td id="sunday"></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-        <tr><td id="sunday">5</td><td>6</td><td>7 <p>손없는날</p></td><td>8<p>손없는날</p></td><td>9</td><td>10</td><td>11</td></tr>
-        <tr><td id="sunday">12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
-        <tr><td id="sunday">19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
-        <tr><td id="sunday">26</td><td>27<p>손없는날</p></td><td>28<p>손없는날</p></td><td>29</td><td>30</td><td></td><td></td></tr>
+        <tr><td id="sunday"></td><td></td><td></td><td> 1<p class="middle">의병의날, 지방선거</p></td><td> 2</td><td> 3<p class="middle">단오</p></td><td> 4</td></tr>
+        <tr><td id="sunday"> 5<p class="middle">환경의날</p></td><td>6<p class="middle">현충일,망종</p></td><td>7 <p class="middle">&nbsp;</p><p class="son">손없는날</p></td><td>8<p class="middle">&nbsp;</p><p class="son">손없는날</p></td><td>9<p class="middle">구강보건의날</p></td><td>10<p class="middle">6.10민주항쟁</p></td><td>11</td></tr>
+        <tr><td id="sunday"> 12</td><td>13</td><td> 14</td><td> 15</td><td> 16</td><td> 17<p class="middle">&nbsp;</p><p class="son">손없는날</p></td><td> 18<p class="middle">&nbsp;</p><p class="son">손없는날</p></td></tr>
+        <tr><td id="sunday"> 19</td><td>20</td><td>21<p class="middle">하지</p></td><td> 22</td><td> 23</td><td> 24</td><td> 25<p class="middle">6.25한국전쟁</p></td></tr>
+        <tr><td id="sunday"> 26</td><td>27 <p class="middle">&nbsp;</p><p class="son">손없는날</p></td><td>28<p class="middle">철도의날</p><p class="son">손없는날</p></td><td> 29</td><td> 30</td><td></td><td></td></tr>
     </table>
 </body>
 </html>
