@@ -1,0 +1,12 @@
+ul{
+    background-color: lightgray; 
+    padding: 6px;
+    text-align: center;
+}
+li{display: inline; padding: 10px 10px; }
+a{
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+a:hover{background-color: gray; color: white;}

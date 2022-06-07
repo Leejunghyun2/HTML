@@ -1,0 +1,43 @@
+.box {
+    background-color: gray;
+    color: white;
+}
+
+.floating {
+    background-color: lightgray;
+    margin: 2px;
+    float: left;
+}
+
+body {
+    height: 400px;
+}
+
+#b1 {
+    height: 20%;
+}
+
+#b2 {
+    height: 65%;
+}
+
+#f1 {
+    width: 18%;
+    height: 100%;
+    overflow: scroll;
+}
+
+#f2 {
+    width: 50%;
+    height: 100%;
+}
+
+#f3 {
+    width: 30%;
+    height: 100%;
+}
+
+#b3 {
+    height: 10%;
+    clear: left;
+}
