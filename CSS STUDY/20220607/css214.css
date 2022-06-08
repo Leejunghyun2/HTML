@@ -1,0 +1,44 @@
+div{
+    background-color: orange;
+    width: 200px;
+    height: 70px;
+    border: 1px dashed black;
+    margin: 30px;
+    line-height: 70px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+#b1{
+    box-shadow: 5px 5px 3px red;
+    text-shadow: 5px 5px 3px;
+}
+#b2{
+    box-shadow: 30px 20px;
+}
+#b3{
+    box-shadow: -10px 10px 3px;
+    
+}
+#b4{
+    box-shadow: 10px -10px 3px;
+}
+#b5{
+    box-shadow: -10px -10px 3px;
+}
+#b6{
+    box-shadow: 20px 20px 5px olive;
+}
+#b7{
+    box-shadow: 20px 20px 10px;
+    text-shadow: 2px 0px black,-2px 0px black,0px 2px black, 0px -2px black;
+    color: red;
+}
+#b8{
+    box-shadow: 20px 20px 10px indigo;
+}
+#b9{
+    box-shadow: 20px 20px 10px black,30px 30px 5px red;
+   
+}

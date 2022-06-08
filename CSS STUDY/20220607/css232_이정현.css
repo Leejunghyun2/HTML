@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-shadow: 2px 0px darkblue,-2px 0px darkblue,0px 2px darkblue, 0px -2px darkblue;
+}
+#header{
+    background-color: dimgray;
+    color: white;
+    height: 15%;
+    text-align: center;
+    border-radius: 50px/30px;
+    border-bottom-right-radius: 30px 50px;
+    border-bottom-left-radius: 30px 50px;
+    margin: 5px;
+    line-height: 60px;
+    box-shadow: 5px -5px lightgray;
+}
+#menu{
+    background-color: white;
+    color: white;
+    float: left;
+    width: 20%;
+    height: 75%;
+    text-align: center;
+    
+    
+}
+
+#content{
+    background-color: whitesmoke;
+    float: left;
+    width: 60%;
+    height: 75%;
+    padding: 5px;
+    border-radius: 10px;
+}
+#side{
+    background-color: gainsboro;
+    float: left;
+    width: 20%;
+    height: 75%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+#side ul >li{
+   text-align: left;
+}
+#footer{
+    background-color: darkgray;
+    clear: both;
+    height: 10%;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 40px;
+    font-weight: bolder;
+}
+#menu a{
+    background-color: #333;
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 5px;
+    text-shadow: 1px 0px darkblue,-1px 0px darkblue,0px 1px darkblue, 0px -1px darkblue;
+}
+#menu a:hover{
+    background-color: lightgray;
+    color: black;
+    text-shadow: none;
+}
+#container{
+    height: 400px;
+}

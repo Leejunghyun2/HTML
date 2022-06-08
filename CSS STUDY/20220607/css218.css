@@ -1,0 +1,25 @@
+img{
+    margin: 50px 10px 0px;
+    box-shadow: 5px 5px 10px blue;
+    transition: 3s ease;
+}
+#img1:hover{
+    margin: 10px;
+    transform: translate(10px,50px);
+    /* 이동 */
+}
+#img2:hover{
+    margin: 10px;
+    transform: rotate(360deg);
+    /* 회전 */
+}
+#img3:hover{
+    transform: skew(-10deg,-10deg); 
+    /* 왜곡 */
+}
+#img4:hover{
+    transform: scale(0.5,0.5);
+}
+#img5:hover{
+    transform: scale(1.2,1.2);
+}
