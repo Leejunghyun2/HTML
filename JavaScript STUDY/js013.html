@@ -3,14 +3,38 @@
 <head>
     <title>Document</title>
     <style>
-        td{width: 150px;}
+        td{width: 150px; text-align: center;}
+        table{margin: 0 auto;}
     </style>
-    <script src="js013.js"></script>
+    <script src="js013b.js"></script>
 </head>
 <body>
     <table border="1">
         <tr><th>이름</th><th>중간</th><th>기말</th><th>총점</th></tr>
-        <tr><td><script>document.write(stu[0].name);</script></td><td><script>document.write(stu[0].web1);</script></td><td><script>document.write(stu[0].web2);</script></td><td><script>document.write(stu[0].total)</script></td></tr>    
-    </table>
+        <script>
+            for(i=0; i<stu.length;i++){
+        document.write("<tr><td>"+
+            stu[i].name+"</td><td>" //이름
+            +stu[i].middle+"</td><td>" //중간점수
+                +stu[i].final+"</td><td>" //기말
+                +stu[i].total+"</td></tr>") //총점
+        }  
+        </script>
+        </table> <hr>
+        <table border="1">
+            <tr><th>이름</th><th>중간</th><th>기말</th><th>총점</th></tr>
+        <script>
+                for(i=0; i<stu.length;i++){
+                    if(stu[i].avg>=80){
+        document.write("<tr><td>"+
+            stu[i].name+"</td><td>" //이름
+            +stu[i].middle+"</td><td>" //중간점수
+                +stu[i].final+"</td><td>" //기말
+                +stu[i].total+"</td></tr>") //총점
+                }
+        }
+        </script>
+         </table> <hr>
+            
 </body>
 </html>
