@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{margin: 0 auto;}
+        td{width: 100px;height: 50px; text-align: center;}
+    </style>
+    <script>
+        let name = prompt("이름을 입력하세요.");
+        let kor = prompt("국어성적을 입력하세요.");
+        let math = prompt("수학성적을 입력하세요.");
+        let eng = prompt("영어성적을 입력하세요.");
+        let total = Number(kor)+Number(math)+Number(eng);
+        let avg = total/3;
+    </script>
+</head>
+<body>
+    <table border="1">
+        <tr><td>이름</td><td><script>document.write(name)</script></td></tr>
+        <tr><td>국어</td><td><script>document.write(kor)</script></td></tr>
+        <tr><td>수학</td><td><script>document.write(math)</script></td></tr>
+        <tr><td>영어</td><td><script>document.write(eng)</script></td></tr>
+        <tr><td>총점</td><td><script>document.write(total)</script></td></tr>
+        <tr><td>평균</td><td><script>document.write(avg.toFixed(2))</script></td></tr>
+    </table>
+</body>
+</html>

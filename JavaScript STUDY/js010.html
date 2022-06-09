@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{width: 300px;height: 100px;}
+    </style>
+    <script>
+        var txt="마우스를 가져다 놓으면 전구가켜지고 떼면 꺼집니다."
+    </script>
+</head>
+<body>
+    <img src="img/lightoff.png" onmouseover="this.src='img/lighton.png'
+    ", onmouseleave="src='img/lightoff.png'"/> <br>
+    <button onclick="alert(txt)">전구 on/off방법</button>
+</body>
+</html>

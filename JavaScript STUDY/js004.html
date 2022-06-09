@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js004.html</title>
+    <script>
+        // 문자열 변수 정의
+        var txt = "<h1>자바스크립트 프로그래밍</h1>";
+        
+        /* 자바스크립트 함수 welcome() 정의
+           <p>태그 안에 담을 수 있도록 문자열변수 txt를 지정 */
+        function welcome(){
+            // document.getElementById("demo").innerHTML = txt;
+            document.getElementById("demo").innertext = txt; //이건 html 명령어 그대로 출력 
+
+        }
+    </script>
+</head>
+<body>
+    <h3>Welcome to Javascript!</h3>
+    <button type="button" onclick="welcome();">Start learning</button>
+    <p id="demo">----------------</p>
+</body>
+</html>

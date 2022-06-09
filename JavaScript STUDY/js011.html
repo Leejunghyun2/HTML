@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{width: 200px;height: 100px;}
+    </style>
+    <script>
+        let answer = confirm("어두워졌습니다. 전구를 켤까요?");
+        while(true){
+        if(answer==true){
+            document.write("<h3>전구를 켰습니다.</h3>");
+            document.write("<img src='img/lighton.png'/><hr>");
+        } else{
+            document.write("<h3>전구상태 off</h3>");
+            document.write("<img src='img/lightoff.png'/><hr>");
+              
+        }
+    }
+    </script>
+</head>
+<body>
+      
+</body>
+</html>
