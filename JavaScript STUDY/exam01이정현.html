@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        caption{font-size: 20px; font-weight: bold;}
+    </style>
+</head> 
+
+<body>
+    <form action="">
+    <table border="1">
+        <caption>Input 태그 연습하기</caption>
+        <tr><th>이름</th><td><input type="text"></td></tr>
+        <tr><th>비밀번호</th><td><input type="password" name="pw"></td></tr>
+        <tr><th>생일</th><td><input type="date"></td></tr>
+        <tr><th>나이</th><td><input type="text" name="age"></td></tr>
+        <tr><th>입력불가능</th><td><input type="text" disabled></td></tr>
+        <tr><th>프로필사진</th><td><input type="file" alt="선택된 파일 없음" ></td></tr>
+        <tr><th>성별</th><td><input type="radio" name="gender" value="male" id="g1"><label for="g1">남성</label><input type="radio" name="gender" value="female" id="g2"><label for="g2">여성</label></td></tr>
+        <tr><th>관심분야</th>
+            <td>
+                <input type="checkbox" name="movie" id="m1"><label for="m1">영화</label>
+                <input type="checkbox" name="art" id="m2"><label for="m2">미술</label>
+                <input type="checkbox" name="soc" id="m3"><label for="m3">운동</label>
+                <input type="checkbox" name="music" id="m4"><label for="m4">음악</label>
+            </td>
+        </tr>
+        <tr><th colspan="2"><button type="submit">제출</button> <button type="reset">초기화</button></th></tr>
+    
+    </table>
+    </form>
+</body>
+</html>

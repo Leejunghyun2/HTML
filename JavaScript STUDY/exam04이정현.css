@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+#left > img,h2,p{
+    background-color: lightgray;
+    margin: 10px;
+}
+
+#left p{
+    margin-top: 20px;
+    
+}
+#left #state{
+   margin-top: 150px;
+}
+
+img{
+    width: 100px;
+    height: 130px;
+}
+#container{
+    width: 1000px;
+    margin: 0 auto;
+    height: 1100px;
+    
+}
+#left{
+    background-color: lightgray;
+    float: left ;
+    width: 33%;
+    height: 100%;
+    padding: 20px 40px;
+}
+#right{
+    background-color: white;
+    float: left;
+    width: 67%;
+    height: 100%;
+    padding: 20px 30px
+}
+#sns{
+    font-size: x-large;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+#right > div , div >div , ul,li,table,td{
+    background-color: white;
+}
+#wes{
+    
+    font-size: 26px;
+    font-weight: bold;
+    margin-left:  10%;
+    margin-top: 40px;
+    border-bottom: 1px dotted black;
+    
+}
+#ny span{
+    background-color: yellow;
+}
+#name{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#ny{
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 12%;
+}
+#a{
+    margin-top: 20px;
+    
+}
+ul,li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 300;
+    font-size: 14px;
+}
+#right td,caption,th{
+    background-color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+#right th{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: lightgray;
+}
+#right table{
+    margin-left: 20px;
+    border-collapse: collapse;
+}
+

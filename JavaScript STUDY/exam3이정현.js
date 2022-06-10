@@ -13,13 +13,5 @@ stu[2] = new Student('주성치',12123,64,78);
 stu[3] = new Student('강경인',11111,94,86);
 stu[4] = new Student('홍길동',14345,65,75);
 
-function score(){
-for(i=0;i<stu.length;i++){
-    document.getElementById('name'+i).innerHTML = stu[i].name;
-    document.getElementById("middle"+i).innerHTML = stu[i].middle;
-    document.getElementById("final"+i).innerHTML = stu[i].final;
-    document.getElementById("total"+i).innerHTML = stu[i].total;
-    document.getElementById("avg"+i).innerHTML = stu[i].avg;
-    }
-}
+
 
