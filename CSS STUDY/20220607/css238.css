@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: lightcoral;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+#content{
+    display: flex;
+}
