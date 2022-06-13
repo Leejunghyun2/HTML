@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js014.js"></script>
+</head>
+<body>
+    <script>
+        var score = prompt('성적을 입력하세요.');
+        var grade = "";
+        switch(Number(score/10)){
+            case 10:
+                grade = "A+";
+                break;
+            case 9:
+                grade = "A";
+                break;
+            case 8:
+                grade = "B";
+                break;
+            case 7:
+                grade = "C";
+                break;
+            case 6:
+                grade = "D";
+                break;
+            default: 
+                grade = "F";
+                
+            
+        }
+        document.write(score + "("+grade+")")
+    </script>
+</body>
+</html>

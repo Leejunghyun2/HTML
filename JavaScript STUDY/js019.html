@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="form1">
+        <table border="1">
+        <tr><th>이름 :</th><td><input type="text" name="subname" id=""></td></tr>
+        <tr><th>국어성적 :</th><td><input type="text" name="kor" id=""></td></tr>
+        <tr><th>수학성적 :</th><td><input type="text" name="math" id=""></td></tr>
+        <tr><th colspan="2"><button onclick="computer();">성적처리 결과</button></th></tr>
+        </table>
+    </form>
+    <script>
+        function computer(){
+            var total;
+            total = Number(form1['kor'].value) + Number(form1['math'].value);
+            avg = total / 2;
+            alert(form1['subname'].value + "학생의 평균성적은" + avg + "입니다.")
+        }
+    </script>
+</body>
+</html>
