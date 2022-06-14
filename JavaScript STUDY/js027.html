@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cYear = new Date();
+        nyear = new Date(2023,5,14);
+
+        year = cYear.getFullYear();
+        month = cYear.getMonth();
+        date = cYear.getDate();
+        day = cYear.getDay();
+        hour = cYear.getHours();
+        switch(day){
+            case 0: days = "일"; break;
+            case 1: days = "월"; break;
+            case 2: days = "화"; break;
+            case 3: days = "수"; break;
+            case 4: days = "목"; break;
+            case 5: days = "금"; break;
+            case 6: days = "토"; break;
+        }
+
+        document.write(year+"<br>");
+        document.write(month+"<br>");
+        document.write(date+"<br>");
+        document.write(days+"<br>");
+        document.write(hour+"<br>");
+        lefteddate = nyear.getTime() - cYear.getTime();
+        
+
+        document.write(lefteddate/(60*24*60));//floor 함수는 낮은수로 반환 7.02 면 7   ceil 함수는 높은수의 정수로 반환 7.02면 8을 반환
+    </script>
+</body>
+</html>

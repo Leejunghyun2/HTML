@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3><img src="img/aaa.png" alt=""></h3>
+    <button onclick="solve();">2차 방정식 근 구하기</button>
+    
+    <script>
+        function solve(){
+            
+            var a1 = prompt("2차방정식 2차항의 계수는 ?");
+            var b1 = prompt("2차방정식 1차항의 계수는 ?");
+            var c1 = prompt("2차방정식 상수의 계수는 ?");
+            a = parseInt(a1); b= parseInt(b1); c= parseInt(c1);
+            d = b*b-4*a*c;
+            if(a==0){
+                
+                alert("2차 방정식이 아님!");
+            }else if(d<0){
+                alert("근 없음");
+            }else if(d==0){
+                root1 = (-1*b+Math.sqrt(d))/(2*a);
+                alert("중근 : " + root1.toPrecision(3));
+                
+            }
+            else{
+                root1 = (-1*b+Math.sqrt(d))/(2*a);
+                root2 = (-1*b-Math.sqrt(d))/(2*a);
+               alert("서로 다른 두 실근 : " +root1.toPrecision(3) + "," + root2.toPrecision(3));
+            }
+        
+        }
+    </script>
+</body>
+</html>

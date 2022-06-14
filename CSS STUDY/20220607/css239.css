@@ -16,6 +16,7 @@
     border: 1px solid black;
     align-items: center;
     justify-items: center;
+    border-radius: 10px;
 }
 .header{
     background-color: gray;
