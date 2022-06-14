@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+.parent{
+    height: 100vh;
+    position: relative;
+   
+    
+    border: 1px solid tomato;
+    background-color: lightblue;
+}
+.child{
+    margin-top: 50px;
+    position: fixed;
+    left: 0px;
+    top: 0;
+    border: 1px solid tomato;
+}

@@ -20,6 +20,7 @@
     margin: 10px;
 }
 #content{
+    
     flex-basis: 80%;
     display: flex;
     
@@ -27,7 +28,6 @@
 #content > div{
     display: flex;
     background-color: gray;
-    width: 50px;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
@@ -38,14 +38,37 @@
     flex-basis: 10%;
 }
 .menu{
-    flex-basis: 20%;
+    flex-grow: 1;
+    flex-shrink: 3;
 }
 .main{
-    flex-basis: 60%;
+    flex-grow: 1;
+    flex-shrink: 2;
 }
 .side{
-    flex-basis: 20%;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 .footer{
     flex-basis: 10%;
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    #content{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    #content > .menu{
+        display: none;
+    }
+    #content > .side{
+        display: none;
+    }
+        
+    
 }
