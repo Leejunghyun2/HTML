@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    여행하고싶은지역 : <input type="text" name="" id="t1">
+    <button onclick="listPlace()">추가</button>
+    <ul id="t2"></ul>
+    <script>
+        function listPlace(){
+            let tag1 = document.getElementById('t1');
+            let tag2 = document.getElementById('t2');
+            let newplace = document.createElement('li');
+            let placeNode = tag1.value; // createtextnode를 안쓰면 추가는 가능하나 console.log찍으면 값이 안나옴(즉, 리턴을 하지않음)
+            newplace.append(placeNode);
+            tag2.append(newplace);
+            tag1.value = '';
+        }
+    </script>
+</body>
+</html>

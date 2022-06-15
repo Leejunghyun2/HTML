@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="halfwindow();">halfwindow</button>
+    <button onclick="quaterwindow();">quaterwindow</button>
+    <script>
+         var top1 = 0;
+         var left = 0;
+         var right = window.screen.width-window.screen.width/4;
+        function halfwindow(){
+            var w1 = window.open('','','top = '+top1+',left ='+right+',width=200, height=150');
+            var width =screen.width/4;
+            var height = screen.height/4;
+            top1 +=30;
+            left +=30;
+            right -= 30;
+            w1.resizeTo(width,height);
+        }
+        function quaterwindow(){
+            var w2 = window.open('','','width=200, height=150');
+            var width =screen.width/4;
+            var height = screen.height/4;
+            w2.top = 50;
+            w2.left = 50;
+            w2.resizeTo(width,height);
+        }
+    </script>
+</body>
+</html>

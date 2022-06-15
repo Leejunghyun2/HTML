@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeContent(){
+            //    obj1.innerHTML = "이제부터는 자바스크립트를 공부합시다.";
+           var obj1 = document.getElementById('p1');
+            var txt = "이제부터는 자바스크립트를 공부합시다.";
+            txt += "<br><br>";
+            txt += "<img src='../20220526/img/jslogo.PNG' width=150 height= 150><hr>";
+            obj1.innerHTML = txt;
+        }   
+       </script>
+</head>
+<body>
+    
+    <h3>What can Javascript do?</h3>
+    <p id="p1">지금까지 HTML과 CSS를 공부했습니다.</p>
+    <button type="button" onclick="changeContent();">Next</button>
+    
+</body>
+</html>

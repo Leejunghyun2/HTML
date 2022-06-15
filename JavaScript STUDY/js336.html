@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>함수</h3>
+    생각하는 시간(30초)
+    <button onclick="thinkstat();">start</button><br>
+    <img src="img/KakaoTalk_20220615_100617453.png" id="img1" style="visibility: hidden;" width="200" height="250"/>
+    <p id="noti"></p>
+    <script>
+        function thinkstat(){
+            document.images[0].style.visibility = "visible";
+            setTimeout(myTimer,5000);
+            document.getElementById('noti').innerHTML = " ";
+        }
+        function myTimer(){
+            document.images[0].style.visibility = "hidden";
+            document.getElementById('noti').innerHTML = "5초경과";
+        }
+    </script>
+</body>
+</html>

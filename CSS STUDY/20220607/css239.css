@@ -58,7 +58,8 @@
 
     
 }
-.conteaner > div{
+.conteaner > .side2,.side3{
+    display: block;
     display: none;
 }
 
