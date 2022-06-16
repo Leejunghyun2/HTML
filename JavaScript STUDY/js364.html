@@ -7,9 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    여행하고싶은지역 : <input type="text" name="" id="t1">
+    <h2>
+        <img src="../img/car.png" width="50" height="50" id="img1">여행 버킷 리스트 !</h2><hr>
+        <ul>
+            <li id="jeju">제주도</li>
+               <ul id="s1"><li><img src="../img/car.png" ></li></ul>
+            <li>하와이</li>
+            <li>그랜드캐년</li>
+        </ul><br>
+    <input type="text" name="" id="t1">
     <button onclick="listPlace()">추가</button>
+    <fieldset>
     <ul id="t2"></ul>
+</fieldset>
     <script>
         function listPlace(){
             let tag1 = document.getElementById('t1');

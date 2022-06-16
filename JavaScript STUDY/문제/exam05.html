@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{width: 50px;height: 50px;}
+    ul > li > ul {display: none;}
+    #hw:hover{ background-color: lightgray;} /*10번문제*/
+</style>
+<body>
+    <h2>
+        <img src="../img/car.png" width="50" height="50" id="img1" onmouseover="f1(this)" onmouseout="f2(this)" onclick="f3(this);">여행 버킷 리스트 !</h2><hr><!--7번-->
+        <ul>
+            <li id="jeju">제주도</li>
+               <ul id="jeju1"><img src="../img/car.png" ></ul>
+            <li id="hw">하와이</li>
+            <li>그랜드캐년</li>
+        </ul><br>
+    <input type="text" name="" id="t1">
+    <button onclick="listPlace()">추가</button>
+    <fieldset>
+        <legend>추천된 여행지 리스트</legend>
+    <ol id="t2"></ol>
+</fieldset>
+    <script>
+        var img1 = "/20220526/img/car.png";
+        
+        function listPlace(){
+            let tag1 = document.getElementById('t1');
+            let tag2 = document.getElementById('t2');
+            let newplace = document.createElement('li');
+            let placeNode = tag1.value;
+            newplace.append(placeNode);
+            tag2.append(newplace);
+            tag1.value = '';
+        }
+        function f1(obj){
+            obj.src="/20220526/img/css3.png";
+        }
+        function f2(obj){
+            obj.src="/20220526/img/car.png";
+        }
+        function f3(obj){
+            obj.src="/20220526/img/image1.JPG";
+        }
+    </script>
+</body>
+</html>

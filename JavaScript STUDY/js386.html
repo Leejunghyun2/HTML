@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h3>Q1. 학생의 학년은?</h3>
+        <input type="radio" id="year" value="1학년">1학년
+        <input type="radio" id="year" value="2학년">2학년
+        <input type="radio" id="year" value="3학년">3학년
+        <input type="radio" id="year" value="4학년">4학년
+        <h3>Q2. 좋아하는 과목은?</h3>
+        <input type="checkbox" name="subject" value="알고리즘">알고리즘
+        <input type="checkbox" name="subject" value="자료구죠">자료구죠
+        <input type="checkbox" name="subject" value="데이터베이스">데이터베이스
+        <input type="checkbox" name="subject" value="운영체제">운영체제
+        <input type="checkbox" name="subject" value="네트워크">네트워크 <hr>
+        <input type="button" name=""  onclick="out();" value="선택완료"/>
+    </form>
+        <div id="output"></div>
+    <script>
+    function out(){
+        let chsub = document.getElementsByName('subject');
+        let grade = document.getElementsByName('year');
+        let gradeval = '';
+        let result = '';
+        for(i=0;i<chsub.length;i++){
+            if(chsub[i].checked == true){
+            result = result+" "+chsub[i].value;
+            }
+        }
+        let val = document.getElementById('output');
+        val.innerHTML = document.forms[0].year.value+ ", 좋아하는 과목 : "+result;
+    }
+    </script>
+</body>
+
+</html>
