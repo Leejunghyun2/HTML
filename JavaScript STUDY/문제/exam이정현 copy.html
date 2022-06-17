@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>
+        <img src="html5.PNG" width="50" height="50" id="img1">여행 버킷 리스트 !</h2><hr><!--7번-->
+        <ul id="bklist">
+            <li id="jeju">제주도</li>
+                <div id="b1"></div>
+            <li id="hw">하와이</li>
+            <li id="grand">그랜드캐년</li>
+        </ul><br>
+    <input type="text" name="" id="t1">
+    <button onclick="listPlace()">추가</button>
+    <fieldset>
+        <legend>추천된 여행지 리스트</legend>
+    <ol id="t2" class="ol1"></ol>
+</fieldset>
+    <script>
+        var jeju = document.getElementById('jeju');
+        jeju.addEventListener('mouseenter',function(){
+            let newul = document.getElementById('b1');
+            newul.innerHTML = "<img src='html5.PNG' width=100 height = 100>";
+            
+        })
+        jeju.addEventListener('mouseleave',function(){
+            let newul = document.getElementById('b1');
+            newul.innerHTML = "";
+        })
+        
+        var ox = false;
+        var img1 = document.getElementById('img1');
+        img1.addEventListener('mouseenter',function(){
+            if(ox==false){
+                img1.src = "css3.png"
+            }
+        })
+        img1.addEventListener('mouseleave',function(){
+            if(ox==false){
+                img1.src = "html5.png"
+            }
+        })
+        img1.addEventListener('click',function(){
+            img1.src = "car.png"
+            ox= true;
+            
+        })
+        var grand = document.getElementById('grand');
+        grand.addEventListener('click',function(){
+            grand.innerHTML = "자이언캐년";
+            grand.addEventListener('click',function(){
+                grand.innerHTML = "브라이언캐년";
+            })
+        })
+        function listPlace(){
+            let tag1 = document.getElementById('t1');
+            let tag2 = document.getElementById('t2');
+            tag2.innerHTML += "<li ondblclick='move(this);'>"+tag1.value+"</li>";
+            tag1.value = "";
+        }
+        var hwai = document.getElementById('hw');
+        hwai.addEventListener('mouseenter',function(){
+            hwai.style.backgroundColor = "lightgray";
+        })
+        hwai.addEventListener('mouseleave',function(){
+            hwai.style.backgroundColor = "white";
+        })
+       
+        function move(obj){
+            bklist= document.getElementById('t2');
+            bklist.appendChild(obj);
+        }
+        
+        </script>
+</body>
+</html>

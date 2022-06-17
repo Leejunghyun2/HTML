@@ -8,7 +8,7 @@
                         "menu main side2" 
                         "menu main side3"
                         "footer footer footer";
-    grid-gap: 10px; 
+    grid-gap: 10px;
     margin-bottom: 5px;
 }
 .container > div{
@@ -51,15 +51,14 @@
  grid-template-columns: 1fr;
  grid-template-rows: 100px 50px 1fr 30px  30px;
  grid-template-areas: "header"
-                    "menu"
+                      "menu"
                       "main"
                       "side1"
                       "footer";
 
     
 }
-.conteaner > .side2,.side3{
-    display: block;
+.conteaner > div{
     display: none;
 }
 
