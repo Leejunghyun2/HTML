@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="responsiveExam이정현.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div id="box1">
+        <div id="container">
+            <div id="header">
+                <p id="headertext">현재 모집중인 과정</h1>
+            </div>
+            <div id="nav">
+                <div id="menu1" class="menu1_1">
+                  전체보기
+                </div>
+                <div id="menu1" class="menu1_2">
+                    <p id="k1" >K디지털훈련+지역산업맞춤</p>
+                    <p id="k2">K디지털훈련</p>
+                </div>
+                <div id="menu1" class="menu1_3">
+                  국민내일배움
+                </div>
+                <div id="menu1" class="menu1_4">
+                  스마트혼합훈련
+                </div>
+                <div id="menu1" class="menu1_5" >
+                  과정평가형
+                </div>
+            </div>
+            <div id="menu">
+                <div id="img">
+                    <img src="img/img4.png" alt="">
+                    <h5>스마트혼합훈련</h5>
+                    <p class="contentmenu">클라우드 기반 딥러닝/구글AutoML 데이터 사이언티스트 양성</p>
+                    <p class="period">2022.06.30 ~ 2022.12.30</p>
+                    <button id="b1">상세보기</button> <button id="b2">수강신청</button>
+                </div>
+                <div id="img" class="digital">
+                    <img src="img/img2.png"  alt="">
+                    <h5>K디지털훈련+지역산업맞춤</h5>
+                    <p class="contentmenu">5G기반 스마트웰니스 의료기기 인공지능 로봇틱스</p>
+                    <p class="period">2022.07.11 ~ 2023.02.13</p>
+                    <button id="b1">상세보기</button> <button id="b2">수강신청</button>
+                </div>
+                <div id="img" class="leason">
+                    <img src="img/img3.png" alt="">
+                    <h5>과정평가형</h5>
+                    <p class="contentmenu">해킹보안실무 정보보안산업기사 (NCS과정평가형) 취득 과정</p>
+                    <p class="period">2022.07.18 ~ 2023.01.19</p>
+                    <button id="b1">상세보기</button> <button id="b2">수강신청</button>
+                </div>
+                <div id="img" class="digital">
+                    <img src="img/img7.png" alt="">
+                    <h5>K디지털훈련+지역산업맞춤</h5>
+                    <p class="contentmenu">메타버스 NFTㆍ블록체인 부트캠프 양성과정</p>
+                    <p class="period">2022.09.26 ~ 2023.04.07</p>
+                    <button id="b1">상세보기</button> <button id="b2">수강신청</button>
+                </div>
+                <div id="img" class="digital">
+                    <img src="img/img1.png" alt="">
+                    <h5>K디지털훈련+지역산업맞춤</h5>
+                    <p class="contentmenu">파이썬으로 하는 AI 자율주행 인력야성(feat.실증도로)</p>
+                    <p class="period">2022.10.17 ~ 2023.04.18</p>
+                    <button id="b1">상세보기</button> <button id="b2">수강신청</button>
+                </div>
+                <div id="img" class="digital">
+                    <img src="img/img5.png" alt="">
+                    <h5>K디지털훈련+지역산업맞춤</h5>
+                    <p class="contentmenu">스마트팩토리 PLC실무</p>
+                    <p class="period">2022.10.17 ~ 2023.04.20</p>
+                    <button id="b1">상세보기</button> <button id="b2">수강신청</button>
+                </div>
+                <div id="img" class="digital">
+                    <img src="img/img6.png" alt="">
+                    <h5>K디지털훈련+지역산업맞춤</h5>
+                    <p class="contentmenu">백엔드(자바/프레임워크)개발 실무 & 정보처리산업기사B</p>
+                    <p class="period">2022.10.31 ~ 2023.05.02</p>
+                    <button id="b1">상세보기</button> <button id="b2">수강신청</button>
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+    <iframe src="" id="if1" frameborder="0"></iframe>
+    <script>
+        $(document).ready(function(){
+            $(document).on('click','#nav div',function(e){
+                $('#nav div').removeClass('navMenu');
+                $(this).addClass('navMenu');
+            })
+            $(document).on('click','.menu1_1',function(){
+                $('#menu div').css('display','inline');
+            })
+            $(document).on('click','.menu1_2',function(){
+                $('#menu div').css('display','inline');
+                $('.leason').css('display','none');
+            })
+            $(document).on('click','.menu1_3',function(){
+                $('#menu div').css('display','inline');
+                $('#menu div').css('display','none');
+            })
+            $(document).on('click','.menu1_4',function(){
+                $('#menu div').css('display','inline');
+                $('#menu div').css('display','none');
+            })
+            $(document).on('click','.menu1_5',function(){
+                $('#menu div').css('display','inline');
+                $('.digital').css('display','none');
+            })
+        })
+       
+    </script>
+</body>
+
+</html>
