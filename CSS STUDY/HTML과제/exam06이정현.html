@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="exam06이정현.css">
+ 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 
@@ -17,10 +18,10 @@
         </div>
 
         <div id="menu">
-            <div id="dd1">HTML</div>
-            <div id="dd2">CSS</div>
-            <div id="dd3">JavaScript</div>
-            <div id="dd4">jQuery</div>
+            <div id="dd1" class="noneSelector selector">HTML</div>
+            <div id="dd2" class="noneSelector">CSS</div>
+            <div id="dd3" class="noneSelector">JavaScript</div>
+            <div id="dd4" class="noneSelector">jQuery</div>
         </div>
 
         <div id="main">
@@ -231,20 +232,29 @@
         $(document).ready(function () {
             $(document).on('click', '#dd1', function () {
                 $('#main div').css('display','none');
+                $('#menu div').removeClass('selector');
+                $('#dd1').addClass('selector');
                 $('#d1').css('display','inline');
+                
             })
             $(document).on('click', '#dd2', function () {
                 $('#main div').css('display','none');
+                $('#menu div').removeClass('selector');
+                $('#dd2').addClass('selector');
                 $('#d2').css('display','inline');
 
             })
             $(document).on('click', '#dd3', function () {
                 $('#main div').css('display','none');
+                $('#menu div').removeClass('selector');
+                $('#dd3').addClass('selector');
                 $('#d3').css('display','inline');
             })
             $(document).on('click', '#dd4', function () {
                 $('#main div').css('display','none');
-                $('#d4').css('display','inline');
+                $('#menu div').removeClass('selector');
+                $('#dd4').addClass('selector')
+                $('#d4').css('display','inline');;
             })
         })
     </script>
