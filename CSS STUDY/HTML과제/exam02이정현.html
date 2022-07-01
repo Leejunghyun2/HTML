@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exam02이정현.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box1">
+        <h2>현재 날짜/시간</h2>
+        <div id="digitTime">
+
+        </div>
+        <button id="bt1">남은시간</button>
+
+        <div id="msg">
+            백엔드(자바/프레임워크) 개발실무 & 정보처리산업기사 <br>
+            A 과정의 수료 예정일은 2022년 10월 13일입니다.
+            <br>수료일까지는 <SPan id="msg1"></SPan>일이 남았습니다.
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            let todayDate = new Date();
+            let lesDate = new Date(2022, 09, 13);
+            setInterval(function () {
+                let todayDate = new Date();
+                let year = todayDate.getFullYear();
+                let month = todayDate.getMonth();
+                let date = todayDate.getDate();
+                let day = todayDate.getDay();
+                let hour = todayDate.getHours();
+                let minute = todayDate.getMinutes();
+                let second = todayDate.getSeconds();
+                var ma = "";
+                if (hour > 12) {
+                    ma = "오후"
+                } else {
+                    ma = "오전"
+                }
+                let days = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
+                var tYear = year + "년" + month + "월" + date + "일" + days[day];
+                var tTime = ma + " " + hour % 12 + " : " + minute + " : " + second;
+                $('#digitTime').html(tYear + "<br>" + tTime)
+            }, 100);
+            $(document).on('click', '#bt1', function () {
+                $('#msg1').html(((lesDate - todayDate) / (24 * 60 * 60 * 1000)).toFixed(0));
+                $('#msg').css('display', 'block');
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>

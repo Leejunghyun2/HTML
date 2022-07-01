@@ -1,0 +1,32 @@
+body{
+    display: flex;
+ 
+    justify-content: center;
+}
+#box1{
+    position: relative;
+}
+#digitTime{
+    margin-top: 0px;
+    font-size: 30px;
+    width: 400px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: deepskyblue;
+}
+div{
+    width: 400px;
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 0px;
+}
+#msg{
+    display: none;
+    margin-top: 25px;
+}
+#bt1{
+    position: absolute;
+    left: 0px;
+}

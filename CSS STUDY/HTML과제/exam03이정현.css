@@ -1,0 +1,44 @@
+#container{
+    background-color: lightgray;
+    display: flex;
+    line-height: 50px;
+}
+#container > div{
+    font-size: 20px;
+    font-family: consolas;
+    text-align: center;
+    position: relative;
+    width: 200px;
+    height: 50px;
+}
+#container > div:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+#container > div > div {
+    color: black;
+    display: none;
+    position: relative;
+    top: -15px;
+    left: 30px;
+    background-color: aliceblue;
+}
+#container > div > div:hover {
+    background-color: black;
+    color: white;
+}
+#item2:hover div{
+    display: block;
+}
+#item3:hover div{
+    display: block;
+}
+#item4:hover div{
+    display: block;
+}
+#menucon{
+    height: 500px;
+    padding-top: 100px;
+    padding-left: 50px;
+}

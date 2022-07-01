@@ -1,0 +1,25 @@
+table{
+    margin: 0px auto;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+th{
+    background-color: rgb(163, 190, 241);
+    padding: 0px 20px;
+}
+td{
+    background-color: beige;
+}
+#bt1{
+    text-align: center;
+}
+#gradenum,#name,#major{
+    width: 100px;
+}
+#address{
+    width: 320px;
+}
